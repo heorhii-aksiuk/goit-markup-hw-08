@@ -114,7 +114,7 @@ body {
   display: none;
 }
 
-.menu-mob {
+.menu-mob-button {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -126,12 +126,33 @@ body {
   cursor: pointer;
 }
 
-.menu-mob__icon {
+.menu-mob-button__icon {
   fill: #000000;
 }
 
-.menu-mob:hover .menu-mob__icon,
-.menu-mob:focus .menu-mob__icon {
+.menu-mob-button:hover .menu-mob-button__icon,
+.menu-mob-button:focus .menu-mob-button__icon {
   fill: var(--accent-color);
+}
+
+.menu-mob {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background: var(--main-background-color);
+}
+
+.menu-mob__close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
