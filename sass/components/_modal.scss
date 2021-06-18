@@ -1,201 +1,201 @@
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 528px;
+//   height: 580px;
 
-  padding: 40px;
+//   padding: 40px;
 
-  background-color: var(--main-background-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+//   background-color: var(--main-background-color);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
 
-  &__close-button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+//   &__close-button {
+//     position: absolute;
+//     top: 8px;
+//     right: 8px;
 
-    padding: 5px;
+//     padding: 5px;
 
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+//     background-color: transparent;
+//     border-radius: 50%;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
 
-    cursor: pointer;
-  }
+//     cursor: pointer;
+//   }
 
-  &__close-icon {
-    display: block;
-    transition: fill var(--main-duration) var(--main-timing-function);
+//   &__close-icon {
+//     display: block;
+//     transition: fill var(--main-duration) var(--main-timing-function);
 
-    .modal__close-button:hover &,
-    .modal__close-button:focus & {
-      fill: var(--accent-color);
-    }
-  }
+//     .modal__close-button:hover &,
+//     .modal__close-button:focus & {
+//       fill: var(--accent-color);
+//     }
+//   }
 
-  &__title {
-    display: block;
+//   &__title {
+//     display: block;
 
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.15;
-  }
+//     text-align: center;
+//     font-size: 20px;
+//     line-height: 1.15;
+//   }
 
-  &__label {
-    display: block;
-    margin-top: 10px;
+//   &__label {
+//     display: block;
+//     margin-top: 10px;
 
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: var(--paragraph-text-color);
+//     font-size: 12px;
+//     line-height: 1.17;
+//     letter-spacing: 0.01em;
+//     color: var(--paragraph-text-color);
 
-    &:first-child {
-      margin-top: 12px;
-    }
-  }
+//     &:first-child {
+//       margin-top: 12px;
+//     }
+//   }
 
-  &__span {
-    position: relative;
-    display: block;
-  }
+//   &__span {
+//     position: relative;
+//     display: block;
+//   }
 
-  &__icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
+//   &__icon {
+//     position: absolute;
+//     top: 50%;
+//     left: 15px;
+//     transform: translateY(-50%);
 
-    display: block;
+//     display: block;
 
-    fill: var(--main-text-color);
+//     fill: var(--main-text-color);
 
-    transition: fill var(--main-duration) var(--main-timing-function);
-    cursor: pointer;
+//     transition: fill var(--main-duration) var(--main-timing-function);
+//     cursor: pointer;
 
-    .modal__input:focus + & {
-      fill: var(--accent-color);
-    }
-  }
+//     .modal__input:focus + & {
+//       fill: var(--accent-color);
+//     }
+//   }
 
-  &__input {
-    display: block;
-    width: 100%;
-    height: 40px;
-    margin-top: 4px;
-    padding-left: 42px;
+//   &__input {
+//     display: block;
+//     width: 100%;
+//     height: 40px;
+//     margin-top: 4px;
+//     padding-left: 42px;
 
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.01em;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
 
-    transition: border var(--main-duration) var(--main-timing-function);
+//     transition: border var(--main-duration) var(--main-timing-function);
 
-    &:focus {
-      border: 1px solid #2196f3;
-      outline: none;
-    }
-  }
+//     &:focus {
+//       border: 1px solid #2196f3;
+//       outline: none;
+//     }
+//   }
 
-  &__textarea {
-    display: block;
-    width: 100%;
-    height: 120px;
-    margin-top: 4px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 16px;
-    padding-right: 16px;
+//   &__textarea {
+//     display: block;
+//     width: 100%;
+//     height: 120px;
+//     margin-top: 4px;
+//     padding-top: 12px;
+//     padding-bottom: 12px;
+//     padding-left: 16px;
+//     padding-right: 16px;
 
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.01em;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
 
-    transition: border var(--main-duration) var(--main-timing-function);
-    resize: none;
+//     transition: border var(--main-duration) var(--main-timing-function);
+//     resize: none;
 
-    &:focus {
-      border: 1px solid #2196f3;
-      outline: none;
-    }
+//     &:focus {
+//       border: 1px solid #2196f3;
+//       outline: none;
+//     }
 
-    &::placeholder {
-      color: rgba(117, 117, 117, 0.5);
-    }
-  }
+//     &::placeholder {
+//       color: rgba(117, 117, 117, 0.5);
+//     }
+//   }
 
-  &__checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 1.71;
-    text-align: center;
-    color: var(--paragraph-text-color);
-  }
+//   &__checkbox {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 20px;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     text-align: center;
+//     color: var(--paragraph-text-color);
+//   }
 
-  &__hidden-input {
-    position: absolute;
-  }
+//   &__hidden-input {
+//     position: absolute;
+//   }
 
-  &__custom-icon {
-    margin-right: 8px;
-    fill: transparent;
-    stroke: var(--main-text-color);
-    stroke-width: 1.7px;
-    cursor: pointer;
+//   &__custom-icon {
+//     margin-right: 8px;
+//     fill: transparent;
+//     stroke: var(--main-text-color);
+//     stroke-width: 1.7px;
+//     cursor: pointer;
 
-    .modal__hidden-input:checked + & {
-      fill: var(--accent-color);
-      stroke: transparent;
-      stroke-width: 0px;
-    }
-  }
-  &__agreement {
-    color: var(--accent-color);
-  }
+//     .modal__hidden-input:checked + & {
+//       fill: var(--accent-color);
+//       stroke: transparent;
+//       stroke-width: 0px;
+//     }
+//   }
+//   &__agreement {
+//     color: var(--accent-color);
+//   }
 
-  &__submit-button {
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 90px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 55px;
-    padding-right: 55px;
+//   &__submit-button {
+//     display: block;
+//     margin-top: 30px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     min-width: 90px;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     padding-left: 55px;
+//     padding-right: 55px;
 
-    color: var(--secondary-text-color);
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+//     color: var(--secondary-text-color);
+//     font-family: var(--main-font);
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     letter-spacing: 0.06em;
 
-    background-color: var(--accent-color);
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     background-color: var(--accent-color);
+//     border: none;
+//     border-radius: 4px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    cursor: pointer;
-    transition: background-color var(--main-duration)
-      var(--main-timing-function);
+//     cursor: pointer;
+//     transition: background-color var(--main-duration)
+//       var(--main-timing-function);
 
-    &:hover,
-    &:focus {
-      background-color: #188ce8;
-    }
-  }
-}
+//     &:hover,
+//     &:focus {
+//       background-color: #188ce8;
+//     }
+//   }
+// }

@@ -1,48 +1,48 @@
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+// .clients {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
 
-  background-color: var(--main-background-color);
+//   background-color: var(--main-background-color);
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
+//   &__list {
+//     display: flex;
+//     justify-content: space-between;
+//   }
 
-  &__item {
-    height: 92px;
-    flex-basis: calc((100% - 150px) / 6);
+//   &__item {
+//     height: 92px;
+//     flex-basis: calc((100% - 150px) / 6);
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
 
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+//   &__link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100%;
 
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
+//     border: 1px solid var(--icon-color);
+//     border-radius: 4px;
 
-    transition: border var(--main-duration) var(--main-timing-function);
+//     transition: border var(--main-duration) var(--main-timing-function);
 
-    &:hover,
-    &:focus {
-      border: 1px solid var(--accent-color);
-    }
-  }
+//     &:hover,
+//     &:focus {
+//       border: 1px solid var(--accent-color);
+//     }
+//   }
 
-  &__icon {
-    fill: var(--icon-color);
-    transition: fill var(--main-duration) var(--main-timing-function);
+//   &__icon {
+//     fill: var(--icon-color);
+//     transition: fill var(--main-duration) var(--main-timing-function);
 
-    .clients__link:hover &,
-    .clients__link:focus & {
-      fill: var(--accent-color);
-    }
-  }
-}
+//     .clients__link:hover &,
+//     .clients__link:focus & {
+//       fill: var(--accent-color);
+//     }
+//   }
+// }
