@@ -93,6 +93,16 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .main-header__container {
   display: flex;
 }
@@ -100,6 +110,39 @@ body {
 .main-header__navigation {
   display: flex;
   align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #000000;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+}
+
+.logo__accent {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .menu {
@@ -158,15 +201,17 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-left: auto;
+    align-items: flex-start;
+  }
+  .contacts__item {
+    padding: 0;
   }
   .contacts__item:not(:last-child) {
-    padding: 0;
     margin-bottom: 10px;
   }
   .contacts__link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    text-align: right;
     color: var(--paragraph-text-color);
     font-weight: 500;
     font-size: 12px;
@@ -188,35 +233,30 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    align-items: center;
+  }
+  .contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .contacts__link {
+    font-size: 14px;
+  }
+  .contacts__icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 .main-header {
   border-bottom: 1px solid #ececec;
 }
 
 .main-header__container {
   position: relative;
-}
-
-.logo {
-  display: inline-block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  color: #000000;
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-}
-
-.logo__accent {
-  color: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    margin-right: 88px;
-  }
 }
 
 .menu-mob-button {
