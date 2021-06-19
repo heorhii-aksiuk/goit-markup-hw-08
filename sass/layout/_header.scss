@@ -1,6 +1,3 @@
-// @media screen and (max-width: 767px) {
-// }
-
 .main-header {
   &__container {
     display: flex;
@@ -309,72 +306,3 @@
     color: var(--accent-color);
   }
 }
-
-// .menu {
-//     display: flex;
-//     align-items: center;
-
-//     &__item:not(:last-child) {
-//       margin-right: 50px;
-//     }
-
-//     &__link {
-//       position: relative;
-
-//       display: block;
-//       padding-top: 32px;
-//       padding-bottom: 31px;
-
-//       font-weight: 500;
-//       font-size: 14px;
-//       line-height: 1.14;
-//       letter-spacing: 0.02em;
-
-//       transition: color var(--main-duration) var(--main-timing-function);
-
-//       &:hover,
-//       &:focus {
-//         color: var(--accent-color);
-//       }
-//     }
-//   }
-
-// .contacts {
-//   display: flex;
-//   align-items: center;
-//   margin-left: auto;
-
-//   &__item:not(:last-child) {
-//     margin-right: 50px;
-//   }
-
-//   &__link {
-//     display: flex;
-//     align-items: center;
-
-//     color: var(--paragraph-text-color);
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-
-//     transition: color var(--main-duration) var(--main-timing-function);
-
-//     &:hover,
-//     &:focus {
-//       color: var(--accent-color);
-//     }
-//   }
-
-//   &__icon {
-//     display: block;
-//     margin-right: 10px;
-
-//     fill: var(--paragraph-text-color);
-
-//     .contacts__link:hover &,
-//     .contacts__link:focus & {
-//       fill: var(--accent-color);
-//     }
-//   }
-// }
