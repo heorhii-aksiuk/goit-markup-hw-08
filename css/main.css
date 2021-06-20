@@ -648,8 +648,8 @@ body {
 .team__desc {
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .team__subheading {
@@ -690,6 +690,65 @@ body {
   }
   .team__item {
     flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--main-background-color);
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__item {
+  height: 92px;
+  flex-basis: calc((100% - 60px) / 2);
+  margin: 15px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  transition: border var(--main-duration) var(--main-timing-function);
+}
+
+.clients__link:hover, .clients__link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients__icon {
+  fill: var(--icon-color);
+  transition: fill var(--main-duration) var(--main-timing-function);
+}
+
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients__item {
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 /*# sourceMappingURL=main.css.map */
