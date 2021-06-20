@@ -467,4 +467,37 @@ body {
     background-image: linear-gradient(rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(../images/hero/hero-desk-1600x600@2x.jpg);
   }
 }
+
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.features__illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-background-color);
+}
+
+.features__heading {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.features__paragraph {
+  color: var(--paragraph-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=main.css.map */
