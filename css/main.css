@@ -481,6 +481,7 @@ body {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-background-color);
+  border-radius: 4px;
 }
 
 .features__heading {
@@ -499,5 +500,26 @@ body {
 
 .features__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__heading {
+    text-align: left;
+  }
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 /*# sourceMappingURL=main.css.map */

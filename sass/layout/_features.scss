@@ -10,6 +10,7 @@
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--secondary-background-color);
+    border-radius: 4px;
   }
 
   &__heading {
@@ -33,15 +34,29 @@
   }
 }
 
-//   &__list {
-//     display: flex;
-//   }
+@media screen and (min-width: 768px) {
+  .features {
+    &__heading {
+      text-align: left;
+    }
 
-//   &__item {
-//     flex-basis: calc((100% - 90px) / 4);
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
 
-//     &:not(:last-child) {
-//       margin-right: 30px;
-//     }
-//   }
-// }
+    &__item {
+      flex-basis: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    &__item {
+      flex-basis: calc((100% - 120px) / 4);
+    }
+  }
+}
