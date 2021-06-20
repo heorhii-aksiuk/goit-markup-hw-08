@@ -1,44 +1,44 @@
-// .team__social-list {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.team__social-list {
+  display: flex;
+  justify-content: center;
+}
 
-// .team__social-item {
-//   flex-basis: calc((100% - 30px) / 4);
-//   height: 44px;
-// }
+.team__social-item {
+  width: 44px;
+  height: 44px;
+}
 
-// .team__social-item:not(:last-child) {
-//   margin-right: 10px;
-// }
+.team__social-item:not(:last-child) {
+  margin-right: 10px;
+}
 
-// .team__social-link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 100%;
+.team__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 
-//   border-radius: 50%;
-//   background-color: var(--main-background-color);
+  border-radius: 50%;
+  background-color: var(--main-background-color);
 
-//   transition: background-color var(--main-duration) var(--main-timing-function);
+  transition: background-color var(--main-duration) var(--main-timing-function);
 
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-color);
-//   }
-// }
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
 
-// .team__social-icon {
-//   display: inline-block;
+.team__social-icon {
+  display: inline-block;
 
-//   fill: var(--icon-color);
+  fill: var(--icon-color);
 
-//   transition: fill var(--main-duration) var(--main-timing-function);
+  transition: fill var(--main-duration) var(--main-timing-function);
 
-//   .team__social-link:hover &,
-//   .team__social-link:focus & {
-//     fill: var(--secondary-text-color);
-//   }
-// }
+  .team__social-link:hover &,
+  .team__social-link:focus & {
+    fill: var(--secondary-text-color);
+  }
+}
