@@ -461,7 +461,7 @@ body {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(/images/hero/hero-desk-1600x600.jpg);
+    background-image: linear-gradient(rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(../images/hero/hero-desk-1600x600.jpg);
   }
   .hero__heading {
     font-size: 44px;
