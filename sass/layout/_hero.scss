@@ -10,7 +10,7 @@
       hsla(235, 10%, 21%, 0.4),
       hsla(235, 10%, 21%, 0.4)
     ),
-    url(../images/hero.jpg);
+    url(../images/hero/hero-mob-480x400.jpg);
   background-size: cover;
   background-position: 50% 50%;
 
@@ -50,5 +50,61 @@
     &:focus {
       background-color: #188ce8;
     }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../images/hero/hero-mob-480x400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../images/hero/hero-tab-768x400.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../images/hero/hero-tab-768x400@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(/images/hero/hero-desk-1600x600.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        hsla(235, 10%, 21%, 0.4),
+        hsla(235, 10%, 21%, 0.4)
+      ),
+      url(../images/hero/hero-desk-1600x600@2x.jpg);
   }
 }
