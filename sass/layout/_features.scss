@@ -49,12 +49,18 @@
     &__item {
       flex-basis: calc((100% - 60px) / 2);
       margin: 15px;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
     &__item {
       flex-basis: calc((100% - 120px) / 4);
     }
