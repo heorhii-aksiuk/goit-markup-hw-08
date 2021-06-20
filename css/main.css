@@ -438,6 +438,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: linear-gradient(rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(../images/hero/hero-tab-768x400.jpg);
   }
 }
@@ -450,7 +451,14 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)), url(/images/hero/hero-desk-1600x600.jpg);
+  }
+  .hero__heading {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
