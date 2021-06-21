@@ -54,6 +54,54 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+      <button class="menu-mob-button" type="button" data-menu-button>
+        <svg class="menu-mob-button__icon" width="40px" height="40px">
+          <use href="./images/svg/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu-mob " data-menu>
+        <button class="menu-mob__close-button" type="button" data-menu-close>
+          <svg class="menu-mob__close-icon" width="18px" height="18px">
+            <use href="./images/svg/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-nav list">
+          <li class="mob-nav__item">
+            <a class="mob-nav__link link" href="./index.html">Студия</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="mob-nav__link link current" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="mob-nav__link link" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mob-contacts list">
+          <li class="mob-contacts__item">
+            <a class="mob-contacts__phone link" href="tel:+380961111111"> +38 096 111 11
+              11</a>
+          </li>
+          <li class="mob-contacts__item">
+            <a class="mob-contacts__mail link" href="mailto:info@devstudio.com"
+              target="_blank" rel="noopener noreferrer">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mob-social list">
+          <li class="mob-social__item"><a class="mob-social__link link"
+              href="">Instagram</a></li>
+          <li class="mob-social__item"><a class="mob-social__link link"
+              href="">Twitter</a>
+          </li>
+          <li class="mob-social__item"><a class="mob-social__link link"
+              href="">Facebook</a>
+          </li>
+          <li class="mob-social__item"><a class="mob-social__link link"
+              href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -327,3 +375,6 @@
 </body>
 
 </html>
+
+<!-- Открытие/закрытие мобильного меню -->
+<script src="./js/menu.js"></script>
