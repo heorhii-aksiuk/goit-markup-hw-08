@@ -197,6 +197,12 @@ body {
   fill: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .social__subheading {
+    text-align: left;
+  }
+}
+
 .main-header__container {
   display: flex;
 }
@@ -919,6 +925,32 @@ body {
   }
   .footer-form__input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-footer__container {
+    justify-content: space-between;
+  }
+  .main-footer__contacts {
+    text-align: left;
+  }
+  .footer-logo {
+    text-align: left;
+  }
+  .footer-form {
+    display: inline-block;
+  }
+  .footer-form__subheading {
+    text-align: left;
+  }
+  .footer-form__input {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .footer-form__button {
+    display: inline-block;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

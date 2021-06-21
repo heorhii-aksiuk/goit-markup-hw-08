@@ -4,15 +4,6 @@
 
   background-color: #2f303a;
 
-  //   &__container {
-  //     display: flex;
-  //     align-items: baseline;
-  //   }
-
-  //   &__wrapper {
-  //     margin-right: 70px;
-  //   }
-
   &__contacts {
     font-style: normal;
     font-size: 14px;
@@ -60,8 +51,6 @@
 }
 
 .footer-form {
-  //   margin-left: auto;
-
   &__subheading {
     display: block;
     margin-bottom: 20px;
@@ -152,6 +141,40 @@
   .footer-form {
     &__input {
       width: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-footer {
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__contacts {
+      text-align: left;
+    }
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-form {
+    display: inline-block;
+
+    &__subheading {
+      text-align: left;
+    }
+
+    &__input {
+      width: 358px;
+      margin-right: 12px;
+    }
+
+    &__button {
+      display: inline-block;
+      margin: 0;
     }
   }
 }

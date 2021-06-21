@@ -41,3 +41,9 @@
   display: inline-block;
   fill: var(--secondary-text-color);
 }
+
+@media screen and (min-width: 1200px) {
+  .social__subheading {
+    text-align: left;
+  }
+}
