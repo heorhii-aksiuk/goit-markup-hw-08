@@ -909,4 +909,16 @@ body {
   transform: translateY(-50%);
   fill: var(--secondary-text-color);
 }
+
+@media screen and (min-width: 768px) {
+  .main-footer__container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-form__input {
+    width: 450px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

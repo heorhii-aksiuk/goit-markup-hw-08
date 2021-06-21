@@ -138,3 +138,20 @@
     fill: var(--secondary-text-color);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .main-footer {
+    &__container {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  .footer-form {
+    &__input {
+      width: 450px;
+    }
+  }
+}
