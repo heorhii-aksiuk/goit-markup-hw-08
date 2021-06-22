@@ -79,8 +79,12 @@
 
 .card {
   position: relative;
-
   overflow: hidden;
+
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
 
   &__overlay {
     position: absolute;

@@ -1252,6 +1252,11 @@ body {
   overflow: hidden;
 }
 
+.card__img {
+  display: block;
+  max-width: 100%;
+}
+
 .card__overlay {
   position: absolute;
   top: 0;
