@@ -192,6 +192,10 @@
   right: 0;
   height: 100vh;
   width: 100vw;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 48px;
   padding-right: 15px;
   padding-bottom: 48px;
@@ -227,9 +231,9 @@
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  &__item:last-child {
-    margin-bottom: 302px;
-  }
+  // &__item:last-child {
+  //   margin-bottom: auto;
+  // }
   &__link {
     font-weight: 500;
     font-size: 40px;

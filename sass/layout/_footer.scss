@@ -154,6 +154,10 @@
     &__contacts {
       text-align: left;
     }
+
+    &__item:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .footer-logo {

@@ -43,6 +43,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .social__list {
+    margin-bottom: 0;
+  }
   .social__subheading {
     text-align: left;
   }
