@@ -118,7 +118,6 @@
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
-    box-sizing: border-box;
   }
 
   &__heading {
@@ -139,5 +138,35 @@
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+  }
+
+  .card-list {
+    justify-content: flex-start;
+  }
+
+  .card {
+    &__content {
+      width: 354px;
+    }
+  }
+
+  .first-card {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+  }
+
+  .card {
+    &__content {
+      width: 100%;
+    }
+  }
+
+  .first-card {
+    padding-bottom: 20px;
   }
 }

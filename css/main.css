@@ -1279,7 +1279,6 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
 .card__heading {
@@ -1298,6 +1297,27 @@ body {
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+  }
+  .card-list {
+    justify-content: flex-start;
+  }
+  .card__content {
+    width: 354px;
+  }
+  .first-card {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+  }
+  .card__content {
+    width: 100%;
+  }
+  .first-card {
+    padding-bottom: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
