@@ -627,8 +627,13 @@ body {
   height: 40px;
   padding: 0;
   background-color: transparent;
+  transition: fill var(--main-duration) var(--main-timing-function);
   border: none;
   cursor: pointer;
+}
+
+.menu-mob__close-button:focus, .menu-mob__close-button:hover {
+  fill: var(--accent-color);
 }
 
 .mob-nav__item:not(:last-child) {

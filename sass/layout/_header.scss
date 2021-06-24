@@ -222,8 +222,14 @@
 
     background-color: transparent;
 
+    transition: fill var(--main-duration) var(--main-timing-function);
     border: none;
     cursor: pointer;
+
+    &:focus,
+    &:hover {
+      fill: var(--accent-color);
+    }
   }
 }
 
