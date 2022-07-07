@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-Репозиторий домашнего задания 06. HTML+CSS (Разметка форм; Стилизация форм)
+# goit-markup-hw-08
+GoIT. Markup. Homework #8 (RWD)
